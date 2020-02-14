@@ -1,0 +1,26 @@
+{
+  "name": "mishka",
+  "version": "14.0.0",
+  "private": true,
+  "description": "Личный проект «Мишка» от HTML Academy",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "build": "gulp style",
+    "start": "gulp"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "engines": {
+    "node": "8.11"
+  }
+}
