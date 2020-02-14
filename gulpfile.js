@@ -24,7 +24,7 @@ gulp.task("style", function(done){
 
 gulp.task("serve", function(done) {
   browserSync.init({
-    server: {baseDir : "source/"}
+    server: {baseDir : "source/"},
     notify: false,
     open: true,
     cors:true,
