@@ -1,0 +1,30 @@
+.main-navigation{
+  width: 320px;
+  margin: 0 auto;
+
+  &__pages{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__sub-pages{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+@media (min-width: $tablet-width){
+  .main-navigation{
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .main-navigation{
+    width: 960px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,12 @@
+//main style file, it summs all other styles
+
+
+//global
+@import 'global/global.scss';
+@import 'global/variables.scss';
+@import 'global/fonts.scss';
+
+//blocks
+@import 'block/page.scss';
+@import 'block/page-header.scss';
+@import 'block/main-navigation.scss';

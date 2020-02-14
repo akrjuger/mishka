@@ -1,0 +1,10 @@
+.page-header{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  &__logo{
+    height: 80px;
+  }
+}
