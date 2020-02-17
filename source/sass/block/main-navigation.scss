@@ -1,11 +1,22 @@
 .main-navigation{
-  width: 320px;
-  margin: 0 auto;
+
 
   &__pages{
     margin: 0;
     padding: 0;
     list-style: none;
+
+    display: flex;
+    flex-direction: column;
+
+    // padding: 35px 0;
+  }
+
+  &__item{
+    padding: 30px 10px 30px 57px;
+
+    border-top: 1px solid $border-gray-color;
+    margin-top: -1px;
   }
 
   &__sub-pages{
@@ -13,18 +24,32 @@
     padding: 0;
     list-style: none;
   }
+
+  &__user-menu-items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: $tablet-width){
   .main-navigation{
-    width: auto;
-    margin: 0;
+    &__pages{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__user-menu-items{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 }
 
+
 @media (min-width: $desktop-width){
-  .main-navigation{
-    width: 960px;
-    margin: 0;
-  }
+
 }
