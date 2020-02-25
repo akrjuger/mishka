@@ -1,6 +1,7 @@
 .mobile-burger{
   padding: 0;
   border: none;
+  display: none;
 
   width: 20px;
   height: 14px;
@@ -10,6 +11,10 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100%;
+
+  &--show{
+    display: block;
+  }
 
   &--close{
     width: 21px;

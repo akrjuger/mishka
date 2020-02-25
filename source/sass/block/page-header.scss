@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
 
+
   &__logo-wrapper{
     height: 79px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 
     position: relative;
   }
@@ -25,9 +27,7 @@
     right: 30px;
   }
 
-  &__user-navigation{
 
-  }
 
   &__delivery-info{
     display: none;
@@ -35,6 +35,21 @@
 
   &__sub-navigation{
     display: none;
+  }
+
+  &--closed{
+      @media (max-width: $tablet-width){
+          max-height: 79px;
+
+          .page-header__site-navigation{
+            transform: translateY(-2000px);
+          }
+
+          .page-header__user-navigation{
+            transform: translateY(-2000px);
+          }
+      }
+      
   }
 }
 
