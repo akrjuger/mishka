@@ -1,0 +1,15 @@
+.container{
+  min-width: 320px;
+  max-width: 1050px;
+
+  // margin: 0 auto;
+  width: auto;
+}
+
+@media (min-width: $tablet-width){
+  .container{
+    width: calc(668/778*100%);
+    margin: 0 auto;
+  }
+
+}
