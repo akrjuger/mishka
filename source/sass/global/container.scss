@@ -5,12 +5,12 @@
 
   // margin: 0 auto;
   width: auto;
-  padding: 0 30px;
+  padding: 0 $primary-mobile-page-padding;
 }
 
 @media (min-width: $tablet-width){
   .container{
-    padding: 0 50px;
+    padding: 0 $primary-page-padding;
     margin: 0 auto;
   }
 

@@ -13,7 +13,9 @@
   background-size: 100%;
 
   &--show{
-    display: block;
+    @media (max-width: ($tablet-width)-1px){
+      display: block;
+    }
   }
 
   &--close{
