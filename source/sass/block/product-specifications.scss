@@ -1,0 +1,10 @@
+.product-specifications{
+  border-collapse: collapse;
+
+  &__item{
+    border-bottom: 1px solid $border-gray-color;
+    padding-top: 14px;
+    padding-bottom: 9px;
+    padding-right: 27px;
+  }
+}

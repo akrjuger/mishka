@@ -1,0 +1,142 @@
+.weekly-product{
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__tittle{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: $color-black;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__slogan{
+    margin: 0;
+    margin-bottom: 25px;
+
+    color: $accent-color;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: bold;
+  }
+
+  &__description{
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__specifications{
+    margin-bottom: 28px;
+    max-width: 292px;
+  }
+
+  &__image{
+    align-self: center;
+  }
+
+  &__price{
+    margin: 28px 0;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: $tablet-width){
+  .weekly-product{
+
+    &__tittle{
+      width: calc(75% - 50px);
+      font-size: 43px;
+      line-height: 50px;
+
+      margin-bottom: 55px;
+    }
+
+    &__slogan{
+      position: absolute;
+      top:35px;
+      right: 50px;
+      width: 120px;
+      text-align: center;
+    }
+
+    &__description{
+      width: calc( 50% - 50px);
+      font-size: 17px;
+      line-height: 30px;
+
+      margin-bottom: 50px;
+    }
+
+    &__specifications{
+    }
+
+    &__image{
+      position: absolute;
+      right: $primary-page-padding;
+      // top: 130px;
+      bottom: 0;
+
+      width: calc(50% - 50px);
+      max-height: 80%;
+      object-fit: cover;
+    }
+
+    &__price{
+      align-self: flex-start;
+      width: 292px;
+
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__btn{
+      align-self: flex-start;
+    }
+  }
+}
+
+@media (min-width: $desktop-width){
+  .weekly-product{
+    padding-left: 225px;
+
+    &__tittle{
+      margin-top: 100px;
+      font-size: 53px;
+      line-height: 57px;
+      width: 75%;
+
+      position: relative;
+      z-index: 2;
+    }
+
+    &__slogan{
+      top: 100px;
+      right: auto;
+      left: 50px;
+
+      box-sizing: border-box;
+      width: 175px;
+      padding: 0 40px;
+    }
+
+    &__description{
+      width: 35%;
+    }
+
+    &__specifications{
+    }
+
+    &__image{
+      max-height: calc(100% - 54px);
+    }
+
+    &__price{
+    }
+  }
+}
