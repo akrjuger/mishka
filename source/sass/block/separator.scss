@@ -1,0 +1,21 @@
+.separator{
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 (- $primary-mobile-page-padding);
+  height: 21px;
+  background-image: url('../img/bg-zigzag-line.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: $tablet-width){
+  .separator{
+      margin: 0 (- $primary-page-padding);
+  }
+}
+
+@media (min-width: $desktop-width){
+  .separator{
+      margin: 0;
+  }
+}

@@ -4,6 +4,8 @@
   flex-direction: column;
   position: relative;
 
+  margin-bottom: 21px;
+
   &__tittle{
     margin-top: 30px;
     margin-bottom: 5px;
@@ -48,9 +50,10 @@
 
 @media (min-width: $tablet-width){
   .weekly-product{
+    margin-bottom: 55px;
 
     &__tittle{
-      width: calc(75% - 50px);
+      width: 75%;
       font-size: 43px;
       line-height: 50px;
 
@@ -60,13 +63,13 @@
     &__slogan{
       position: absolute;
       top:35px;
-      right: 50px;
+      right: 0px;
       width: 120px;
       text-align: center;
     }
 
     &__description{
-      width: calc( 50% - 50px);
+      width: 50%;
       font-size: 17px;
       line-height: 30px;
 
@@ -78,11 +81,11 @@
 
     &__image{
       position: absolute;
-      right: $primary-page-padding;
+      right: 0;
       // top: 130px;
       bottom: 0;
 
-      width: calc(50% - 50px);
+      width: 50%;
       max-height: 80%;
       object-fit: cover;
     }
@@ -103,13 +106,13 @@
 
 @media (min-width: $desktop-width){
   .weekly-product{
-    padding-left: 225px;
+    padding-left: calc(100%/6);
+    margin-bottom: 73px;
 
     &__tittle{
       margin-top: 100px;
       font-size: 53px;
       line-height: 57px;
-      width: 75%;
 
       position: relative;
       z-index: 2;
@@ -118,10 +121,10 @@
     &__slogan{
       top: 100px;
       right: auto;
-      left: 50px;
+      left: 0px;
 
       box-sizing: border-box;
-      width: 175px;
+      width: calc(100%/6);
       padding: 0 40px;
     }
 
