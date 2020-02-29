@@ -1,0 +1,147 @@
+.about{
+  margin-top: 16px;
+  margin-bottom: 55px;
+  color: $color-black;
+
+  &__header{
+    margin: 0;
+    padding: 0;
+
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__features{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__feature{
+    position: relative;
+    padding-top: 80px;
+
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+
+    flex-basis: 260px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 0px;
+
+      background-repeat: no-repeat;
+    }
+
+    &--eco::before{
+      left: 5px;
+
+      width: 33px;
+      height: 38px;
+      background-image: url('../img/icon-feature-flower.svg');
+    }
+
+    &--style::before{
+      width: 47px;
+      height: 27px;
+      background-image: url('../img/icon-feature-money.svg');
+    }
+
+    &--likes::before{
+      left: 7px;
+      top:35px;
+
+      width: 34px;
+      height: 27px;
+      background-image: url('../img/icon-feature-heart.svg');
+    }
+
+    &--with-love::before{
+      left: 2px;
+
+      width: 35px;
+      height: 34px;
+      background-image: url('../img/icon-feature-ball.svg');
+    }
+
+    &--russia::before{
+      left: -7px;
+
+      width: 55px;
+      height: 23px;
+      background-image: url('../img/icon-feature-rocket.svg');
+    }
+
+    &--gift::before{
+      left: 3px;
+
+      width: 32px;
+      height: 33px;
+      background-image: url('../img/icon-feature-gift.svg');
+    }
+  }
+}
+
+@media (min-width: $tablet-width){
+  .about{
+    margin-top: 50px;
+    margin-bottom: 80px;
+
+    &__header{
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__feature{
+      margin-top: 27px;
+      flex-basis: 50%;
+
+      font-size: 20px;
+      line-height: 22px;
+
+      &--eco{
+        order: 1;
+      }
+
+      &--style{
+        order: 3;
+      }
+
+      &--likes{
+        order: 5;
+      }
+
+      &--with-love{
+        order: 2;
+      }
+
+      &--russia{
+        order: 4;
+      }
+
+      &--gift{
+        order: 6;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width){
+  .about{
+    margin-top: 60px;
+    padding-left: calc(100%/6);
+    padding-right: calc(100%/6);
+
+    &__header{
+      font-size: 53px;
+      line-height: 57px;
+    }
+  }
+}
