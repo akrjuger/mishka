@@ -1,0 +1,90 @@
+.feedbacks{
+
+  &__title{
+    margin: 0;
+    margin-bottom: 25px;
+
+    color: $color-black;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__posts{
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    list-style: none;
+  }
+  &__post{
+  }
+  &__text{
+    margin: 0;
+    margin-bottom: 35px;
+
+    line-height: 30px;
+  }
+  &__author{
+    margin: 0;
+    margin-bottom: 10px;
+
+    color: $color-black;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+  &__insta{
+    margin: 0;
+
+    color: $color-black;
+    font-size: 17px;
+  }
+  &__btn{
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $tablet-width){
+    .feedbacks{
+      padding-top: 79px;
+      padding-bottom: 100px;
+      margin-bottom: 67px;
+
+      position: relative;
+
+      background-image: url('../img/review@1x.jpg');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      margin-left: - $primary-page-padding;
+      padding-left: $primary-page-padding;
+      &__title{
+        margin-bottom: 50px;
+
+        font-size: 53px;
+        line-height: 57px;
+      }
+      &__text{
+        font-size: 17px;
+      }
+      &__controls{
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+      }
+      &__btn{
+        position: absolute;
+        top:79px;
+        right: 0;
+
+        max-width: 175px;
+      }
+    }
+}
+
+@media (min-width: $desktop-width){
+    .feedbacks{
+      margin-left: 0;
+      padding-left: calc(100%/6);
+      padding-right: 100px;
+    }
+}
