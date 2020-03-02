@@ -1,0 +1,146 @@
+.contacts{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  position: relative;
+  &__title{
+    margin: 0;
+    margin-bottom: 36px;
+
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-black;
+  }
+
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  &__item{
+    display: flex;
+    flex-basis: 280px;
+    flex-grow: 2;
+    font-size: 15px;
+    line-height: 30px;
+
+    margin-right: 20px;
+    margin-bottom: 35px;
+  }
+  &__type{
+    margin: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 78px;
+  }
+  &__value{
+    margin: 0;
+
+  }
+
+  &__map-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  &__map-image{
+  }
+  &__btn{}
+}
+
+@media (min-width: $tablet-width){
+
+  .contacts{
+    margin-top: 65px;
+    &__title{
+      font-size: 43px;
+      line-height: 50px;
+      margin-bottom: 60px;
+    }
+
+    &__list{
+      flex-direction: row;
+      margin-bottom: 25px;
+    }
+    &__item{
+      font-size: 17px;
+      flex-basis: 0;
+    }
+    &__type{
+
+    }
+    &__value{
+
+    }
+
+    &__map-wrapper{
+      margin-left: - $primary-page-padding;
+      margin-right: - $primary-page-padding;
+    }
+    &__btn{}
+
+    &::before{
+      content: '';
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      right: 0;
+      top:-25px;
+
+      background-image: url('../img/icon-flag.svg');
+
+    }
+  }
+}
+
+@media (min-width: $desktop-width){
+  .contacts{
+    padding-left: calc(100%/6);
+    margin-top: 150px;
+    padding-right: 50%;
+    &__title{
+      font-size: 53px;
+      line-height: 57px;
+      margin-bottom: 55px;
+    }
+    &__list{
+      flex-direction: row;
+      margin-bottom: 30px;
+    }
+    &__item{
+      font-size: 17px;
+      flex-basis: 0;
+    }
+    &__type{
+
+    }
+    &__value{
+
+    }
+    &__map-wrapper{
+      position: absolute;
+      top:-70px;
+      right: 0;
+      margin: 0;
+      width: 50%;
+    }
+    &__btn{
+      align-self: flex-start;
+      width: 230px;
+    }
+
+    &::before{
+      right: auto;
+      left: 0;
+      top: -8px;
+      width: calc(100%/6);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

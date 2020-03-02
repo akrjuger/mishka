@@ -1,0 +1,18 @@
+.email-link{
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+
+  // border-bottom: 1px solid $accent-color;
+
+  &::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    // width: 100%;
+    height: 1px;
+    background-color: $accent-color;
+  }
+}
