@@ -4,6 +4,7 @@
   margin-top: 30px;
   margin-bottom: 40px;
   position: relative;
+
   &__title{
     margin: 0;
     margin-bottom: 36px;
@@ -20,8 +21,8 @@
 
     display: flex;
     flex-wrap: wrap;
-
   }
+
   &__item{
     display: flex;
     flex-basis: 280px;
@@ -32,31 +33,40 @@
     margin-right: 20px;
     margin-bottom: 35px;
   }
+
   &__type{
     margin: 0;
     flex-shrink: 0;
     flex-grow: 0;
     flex-basis: 78px;
   }
+
   &__value{
     margin: 0;
-
   }
 
   &__map-wrapper{
+    position: relative;
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    min-height: 457px;
   }
-  &__map-image{
+
+  &__gooogle-map{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    height: 100%;
   }
-  &__btn{}
 }
 
 @media (min-width: $tablet-width){
 
   .contacts{
     margin-top: 65px;
+
     &__title{
       font-size: 43px;
       line-height: 50px;
@@ -67,22 +77,16 @@
       flex-direction: row;
       margin-bottom: 25px;
     }
+
     &__item{
       font-size: 17px;
       flex-basis: 0;
-    }
-    &__type{
-
-    }
-    &__value{
-
     }
 
     &__map-wrapper{
       margin-left: - $primary-page-padding;
       margin-right: - $primary-page-padding;
     }
-    &__btn{}
 
     &::before{
       content: '';
@@ -93,7 +97,6 @@
       top:-25px;
 
       background-image: url('../img/icon-flag.svg');
-
     }
   }
 }
@@ -103,32 +106,31 @@
     padding-left: calc(100%/6);
     margin-top: 150px;
     padding-right: 50%;
+
     &__title{
       font-size: 53px;
       line-height: 57px;
       margin-bottom: 55px;
     }
+
     &__list{
       flex-direction: row;
       margin-bottom: 30px;
     }
+
     &__item{
       font-size: 17px;
       flex-basis: 0;
     }
-    &__type{
 
-    }
-    &__value{
-
-    }
     &__map-wrapper{
       position: absolute;
-      top:-70px;
+      bottom: 0;
       right: 0;
       margin: 0;
       width: 50%;
     }
+
     &__btn{
       align-self: flex-start;
       width: 230px;
