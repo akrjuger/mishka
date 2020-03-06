@@ -90,7 +90,11 @@
 @media (min-width: $tablet-width){
   .main-navigation{
     &__item{
-      padding: 24px 0;
+      padding: 17px 0;
+
+      &::after{
+        display: none;
+      }
     }
 
     &__pages{
@@ -114,7 +118,7 @@
 
     &__user-item{
       &::before{
-        left: 30px;
+        left: 35px;
       }
 
       &--search{

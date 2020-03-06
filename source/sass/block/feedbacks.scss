@@ -2,7 +2,7 @@
 
   &__title{
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 
     color: $color-black;
     font-size: 25px;
@@ -11,7 +11,7 @@
 
   &__posts{
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     padding: 0;
     list-style: none;
   }
@@ -19,13 +19,13 @@
   }
   &__text{
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 27px;
 
     line-height: 30px;
   }
   &__author{
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 
     color: $color-black;
     font-size: 17px;
@@ -45,8 +45,8 @@
 
 @media (min-width: $tablet-width){
     .feedbacks{
-      padding-top: 79px;
-      padding-bottom: 100px;
+      padding-top: 76px;
+      padding-bottom: 20px;
       margin-bottom: 67px;
 
       position: relative;
@@ -60,15 +60,16 @@
       &__title{
         margin-bottom: 50px;
 
-        font-size: 53px;
-        line-height: 57px;
+        font-size: 43px;
+        line-height: 50px;
       }
       &__text{
         font-size: 17px;
+        margin-bottom: 58px;
       }
       &__controls{
         position: absolute;
-        bottom: 100px;
+        bottom: 15px;
         right: 0;
       }
       &__btn{
@@ -86,5 +87,22 @@
       margin-left: 0;
       padding-left: calc(100%/6);
       padding-right: 100px;
+      padding-top: 69px;
+      padding-bottom: 65px;
+
+    &__title{
+      margin-bottom: 50px;
+
+      font-size: 53px;
+      line-height: 57px;
     }
+
+    &__text{
+      margin-bottom: 39px;
+    }
+
+    &__controls{
+      bottom: 60px;
+    }
+  }
 }

@@ -1,13 +1,13 @@
 .contacts{
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 40px;
   position: relative;
 
   &__title{
     margin: 0;
-    margin-bottom: 36px;
+    margin-bottom: 26px;
 
     font-size: 18px;
     line-height: 30px;
@@ -16,6 +16,7 @@
 
   &__list{
     margin: 0;
+    margin-bottom: 2px;
     padding: 0;
     list-style: none;
 
@@ -31,7 +32,7 @@
     line-height: 30px;
 
     margin-right: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   &__type{
@@ -51,6 +52,8 @@
     justify-content: center;
     margin-bottom: 40px;
     min-height: 457px;
+    margin-left: - $primary-mobile-page-padding;
+    margin-right: - $primary-mobile-page-padding;
   }
 
   &__gooogle-map{
@@ -65,12 +68,13 @@
 @media (min-width: $tablet-width){
 
   .contacts{
-    margin-top: 65px;
+    margin-top: 55px;
+    margin-bottom: 58px;
 
     &__title{
       font-size: 43px;
       line-height: 50px;
-      margin-bottom: 60px;
+      margin-bottom: 49px;
     }
 
     &__list{
@@ -86,6 +90,7 @@
     &__map-wrapper{
       margin-left: - $primary-page-padding;
       margin-right: - $primary-page-padding;
+      margin-bottom: 50px;
     }
 
     &::before{
@@ -93,10 +98,15 @@
       position: absolute;
       width: 47px;
       height: 81px;
-      right: 0;
-      top:-25px;
+      right: 2px;
+      top:-15px;
 
       background-image: url('../img/icon-flag.svg');
+      background-repeat: no-repeat;
+    }
+
+    &__btn{
+      max-width:230px;
     }
   }
 }
@@ -104,18 +114,19 @@
 @media (min-width: $desktop-width){
   .contacts{
     padding-left: calc(100%/6);
-    margin-top: 150px;
+    margin-top: 143px;
+    margin-bottom: 106px;
     padding-right: 50%;
 
     &__title{
       font-size: 53px;
       line-height: 57px;
-      margin-bottom: 55px;
+      margin-bottom: 50px;
     }
 
     &__list{
       flex-direction: row;
-      margin-bottom: 30px;
+      margin-bottom: 48px;
     }
 
     &__item{

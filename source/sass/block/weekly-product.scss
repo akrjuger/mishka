@@ -4,10 +4,10 @@
   flex-direction: column;
   position: relative;
 
-  margin-bottom: 21px;
+  margin-bottom: 35px;
 
   &__tittle{
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 5px;
     color: $color-black;
     font-size: 25px;
@@ -16,7 +16,7 @@
 
   &__slogan{
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 
     color: $accent-color;
     text-transform: uppercase;
@@ -40,7 +40,8 @@
   }
 
   &__price{
-    margin: 28px 0;
+    margin-top: 23px;
+    margin-bottom: 26px;
     font-size: 17px;
     line-height: 24px;
     text-align: center;
@@ -57,12 +58,13 @@
       font-size: 43px;
       line-height: 50px;
 
-      margin-bottom: 55px;
+      margin-top: 38px;
+      margin-bottom: 50px;
     }
 
     &__slogan{
       position: absolute;
-      top:35px;
+      top:50px;
       right: 0px;
       width: 120px;
       text-align: center;
@@ -73,7 +75,7 @@
       font-size: 17px;
       line-height: 30px;
 
-      margin-bottom: 50px;
+      margin-bottom: 34px;
     }
 
     &__specifications{
@@ -96,6 +98,9 @@
 
       font-size: 20px;
       line-height: 24px;
+
+      margin-top: 26px;
+      margin-bottom: 35px;
     }
 
     &__btn{
@@ -110,7 +115,7 @@
     margin-bottom: 73px;
 
     &__tittle{
-      margin-top: 100px;
+      margin-top: 116px;
       font-size: 53px;
       line-height: 57px;
 
@@ -119,7 +124,7 @@
     }
 
     &__slogan{
-      top: 100px;
+      top: 131px;
       right: auto;
       left: 0px;
 
@@ -130,6 +135,7 @@
 
     &__description{
       width: 35%;
+      margin-bottom: 45px;
     }
 
     &__specifications{
@@ -140,6 +146,7 @@
     }
 
     &__price{
+      margin-top: 81px;
     }
   }
 }
