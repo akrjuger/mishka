@@ -1,0 +1,33 @@
+.catalog{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  &__item{
+    margin-top: 30px;
+  }
+
+}
+
+@media (min-width: $tablet-width){
+  .catalog{
+
+    &__item{
+      margin-top: 54px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width){
+  .catalog{
+    margin-top: 58px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__item{
+      flex-basis: calc((100% - 2*51px)/3);
+    }
+  }
+}
