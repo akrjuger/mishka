@@ -1,5 +1,39 @@
-  @media (min-width: $tablet-width){
+.page-main__title{
+  padding: 70px $primary-mobile-page-padding;
+  background-color: $bg-dark-gray;
+  // position: absolute;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // height: 24px;
+  background-image: url('../img/bg-zigzag-fill.svg');
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto;
+
+  & h2{
+    text-align: center;
+    font-size: 27px;
+    color: $color-black;
+  }
+}
+
+@media (min-width: $tablet-width){
     .page-main{
       margin-top: -58px;
     }
-  }
+    .page-main__title{
+      padding: 100px $primary-page-padding;
+      & h2{
+        font-size: 43px;
+      }
+    }
+}
+
+@media (min-width: $desktop-width){
+    .page-main__title{
+      & h2{
+        font-size: 53px;
+      }
+    }
+}
