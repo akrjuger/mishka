@@ -1,6 +1,7 @@
 .catalog{
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,7 @@
 
 @media (min-width: $tablet-width){
   .catalog{
-
+    margin-bottom: 53px;
     &__item{
       margin-top: 54px;
     }
