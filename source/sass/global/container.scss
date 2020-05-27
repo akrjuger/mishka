@@ -12,6 +12,9 @@
   .container{
     padding: 0 $primary-page-padding;
     margin: 0 auto;
+    &--width100{
+      width: 100%;
+    }
   }
 
 }

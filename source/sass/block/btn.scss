@@ -11,7 +11,9 @@
   max-width: 292px;
 
   text-decoration: none;
+  font: inherit;
   color: $color;
+  background-color: transparent;
   font-size: $bigger-font-size;
   line-height: $bigger-line-height;
   font-weight: bold;

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин Мишка - Каталог</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <body class="page">
+    <header class="page-header container">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-img" src="./img/logo-mobile.svg" alt="">
+        </a>
+        <button class="page-header__mobile-button mobile-burger" type="button" name="button"></button>
+      </div>
+      <ul class="page-header__site-navigation main-navigation__pages">
+        <li class="main-navigation__item main-navigation__pages-item"><a class="main-navigation__link" href="catalog.html">Каталог товаров</a></li>
+        <li class="main-navigation__item main-navigation__pages-item"><a class="main-navigation__link" href="#">Вязание на заказ</a></li>
+      </ul>
+      <ul class="page-header__sub-navigation main-navigation__sub-pages">
+        <li class="main-navigation__item main-navigation__sub-pages-item"><a class="main-navigation__link" href="catalog.html">Новые поступления</a></li>
+        <li class="main-navigation__item main-navigation__sub-pages-item"><a class="main-navigation__link" href="catalog.html">Распродажа</a></li>
+      </ul>
+      <ul class="page-header__user-navigation main-navigation__user-menu-items">
+        <li class="main-navigation__item main-navigation__user-item main-navigation__user-item--search"><a class="main-navigation__link" href="#">Поиск по сайту</a></li>
+        <li class="main-navigation__item main-navigation__user-item main-navigation__user-item--basket"><a class="main-navigation__link" href="#">Корзина: пока пуста</a></li>
+      </ul>
+      <p class="page-header__delivery-info">Бесплатная доставка по России</p>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Магазин Мишка - Вязание на заказ</h1>
+      <section class="page-main__title">
+        <h2>Вязание на заказ</h2>
+      </section>
+
+      <div class="container">
+        <p class="order__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </div>
+        <form class="order" action="order.html" method="post" onsubmit="return false;">
+          <fieldset class="order__fieldset">
+            <legend class="order__legend">Тип</legend>
+            <div class="order__input-container">
+              <input class="order__radio" type="radio" name="type" value="interior" id="type-interior">
+              <label class="order__label order__label--radio" for="type-interior">Аксессуар для интерьера</label>
+              <input class="order__radio" type="radio" name="type" value="toy" id="type-toy">
+              <label class="order__label order__label--radio" for="type-toy">Детская игрушка</label>
+            </div>
+          </fieldset>
+          <div class="order__fieldset-container--gray">
+            <fieldset class="order__fieldset">
+              <legend class="order__legend">Цвет</legend>
+              <div class="order__input-container">
+
+                <input class="order__checkbox" type="checkbox" name="color" value="white" id="color-white">
+                <label class="order__label order__label--checkbox" for="color-white">Белый</label>
+
+                <input class="order__checkbox" type="checkbox" name="color" value="gray" id="color-gray">
+                <label class="order__label order__label--checkbox" for="color-gray">Серый</label>
+
+                <input class="order__checkbox" type="checkbox" name="color" value="tifany" id="color-tifany">
+                <label class="order__label order__label--checkbox" for="color-tifany">«Тиффани»</label>
+
+                <input class="order__checkbox" type="checkbox" name="color" value="black" id="color-black">
+                <label class="order__label order__label--checkbox" for="color-black">Чёрный</label>
+
+                <input class="order__checkbox" type="checkbox" name="color" value="rose" id="color-rose">
+                <label class="order__label order__label--checkbox" for="color-rose">Розовый</label>
+
+
+                <input class="order__checkbox" type="checkbox" name="color" value="orange" id="color-orange">
+                <label class="order__label order__label--checkbox" for="color-orange">Оранжевый</label>
+              </div>
+            </fieldset>
+          </div>
+          <fieldset class="order__fieldset">
+            <legend class="order__legend">ФИО</legend>
+            <div class="order__input-container order__input-container--text">
+              <label class="order__label order__label--text" for="fio-name">Имя:</label>
+              <input class="order__text" type="text" name="name" value="" id="fio-name" placeholder="Введите ваше имя*">
+            </div>
+            <div class="order__input-container order__input-container--text">
+              <label class="order__label order__label--text" for="fio-second-name">Фамилия:</label>
+              <input class="order__text" type="text" name="second-name" value="" id="fio-second-name" placeholder="Укажите фамилию*">
+            </div>
+            <div class="order__input-container order__input-container--text">
+              <label class="order__label order__label--text" for="fio-father-name">Отчество:</label>
+              <input class="order__text" type="text" name="faher-name" value="" id="fio-father-name" placeholder="Отчество, если желаете">
+            </div>
+          </fieldset>
+          <div class="order__fieldset-container--gray">
+            <fieldset class="order__fieldset">
+              <legend class="order__legend">ТЕЛ</legend>
+              <div class="order__text-input-container order__text-input-container--phone">
+                <input class="order__text order__text--phone" type="text" name="phone" value="" id="phone" placeholder="+7 XXX XXX XX XX*">
+              </div>
+            </fieldset>
+            <fieldset class="order__fieldset order__fieldset--no-margin-top">
+              <legend class="order__legend">E-Mail</legend>
+              <div class="order__text-input-container order__text-input-container--email">
+                <input class="order__text order__text--email" type="text" name="email" value="" id="email" placeholder="Ваш Email*">
+              </div>
+            </fieldset>
+          </div>
+          <fieldset class="order__fieldset">
+            <legend class="order__legend">ДОП</legend>
+            <div class="order__input-container">
+              <textarea class="order__textarea" name="name" rows="4" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </fieldset>
+          <div class="container container--width100">
+            <div class="order__submit-container">
+              <p class="order__required-text">*Поля обязательны для заполнения</p>
+              <button class="btn order__btn" type="submit" name="button">ОТПРАВИТЬ ЗАКАЗ</button>
+            </div>
+
+          </div>
+        </form>
+
+      <!-- </div> -->
+
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__wrapper container">
+          <div class="page-footer__logo-wrapper">
+              <img width="102" height="34" class="page-footer__logo" src="./img/logo-mobile.svg" alt="Логотип магазина Мишка">
+          </div>
+
+          <ul class="page-footer__social-links">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--instagram" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--facebook" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--twitter" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="page-footer__made-by-wrapper">
+              <p class="page-footer__made-by">Разработано <a href="#"><img width="27" height="34" src="./img/logo-htmlacademy.svg" alt="HMTLAcademy"></a></p>
+          </div>
+        </div>
+    </footer>
+    <script src="./js/mobile-menu.js" charset="utf-8"></script>
+  </body>
+</html>
