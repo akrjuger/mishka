@@ -19,7 +19,9 @@
   }
 
   &__logo-img{
+    width: 86px;
     height: 35px;
+    display: block;
   }
 
   &__mobile-button{
@@ -64,6 +66,11 @@
         flex-basis: 40%;
       }
 
+      &__logo-img{
+        height: 46px;
+        width: 113px;
+      }
+
       &__mobile-button{
         display: none;
       }
@@ -105,17 +112,21 @@
 
     &__site-navigation{
       order: 1;
-      flex-basis: 45%;
+      flex-basis: 42.5%;
     }
 
     &__logo-wrapper{
       order: 2;
-      flex-basis: 10%;
+      flex-basis: 15%;
+    }
+    &__logo-img{
+      height: 72px;
+      width: 149px;
     }
 
     &__user-navigation{
       order:3;
-      flex-basis: 45%;
+      flex-basis: 42.5%;
     }
 
     &__sub-navigation{
