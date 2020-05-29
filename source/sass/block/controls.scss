@@ -17,12 +17,25 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    transition: $main-transition;
+
     &--next{
       background-image: url('../img/icon-left-arrow.svg');
     }
 
     &--previous{
       background-image: url('../img/icon-right-arrow.svg');
+    }
+
+    &:hover{
+      opacity: $hover-opacity;
+      transition: $main-transition;
+    }
+
+    &:active, &:focus{
+      opacity: $active-opacity;
+      transition: $main-transition;
+      outline: 0;
     }
   }
 }

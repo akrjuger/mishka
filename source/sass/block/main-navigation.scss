@@ -29,7 +29,24 @@
     line-height: 24px;
     color: $color-black;
     font-weight: bold;
+    transition: $main-transition;
+    &:hover{
+      opacity: $hover-opacity;
+      transition: $main-transition;
+    }
+    &:active{
+      opacity: $active-opacity;
+      transition: $main-transition;
+    }
+    &:hover .main-navigation__icon{
+      opacity: 1;
+      fill: $accent-color;
+      transition: $main-transition;
+
+    }
   }
+
+
 
   &__pages{
     margin: 0;
@@ -58,33 +75,20 @@
 
   &__user-item{
     position: relative;
-    &::before{
-      content: '';
-      display: block;
-      position: absolute;
-      top:50%;
-      margin-top: -9px;
-      left: 0px;
-      width: 18px;
-      height: 18px;
-
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: 0 0;
-    }
-
-    &--search::before{
-      background-image: url('../img/icon-search.svg');
-    }
-
-    &--basket::before{
-      width: 21px;
-      height: 20px;
-      background-image: url('../img/icon-cart.svg');
-    }
   }
 
-
+  &__icon{
+    position: absolute;
+    top:50%;
+    margin-top: -9px;
+    opacity: 0.2;
+    &--search{
+      left: 35px;
+    }
+    &--basket{
+      left: 40px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width){

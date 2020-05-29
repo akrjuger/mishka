@@ -20,4 +20,15 @@
   text-transform: uppercase;
 
   border: 2px solid $color;
+
+  transition: $main-transition;
+
+  &:hover{
+    background-color: $color;
+    color: $bg-color;
+  }
+
+  &:active, &:focus{
+    color: #7c7c7c;
+  }
 }
