@@ -31,4 +31,19 @@
   &:active, &:focus{
     color: #7c7c7c;
   }
+
+  &--green{
+    background-color: $accent-color;
+    border-color: $accent-color;
+    color: $bg-color;
+  }
+
+  &:hover{
+    background-color: $bg-color;
+    color: $accent-color;
+  }
+
+  &:active, &:focus{
+    opacity: $active-opacity;
+  }
 }

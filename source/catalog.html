@@ -213,6 +213,28 @@
         </div>
       </div>
     </footer>
+    <div class="add-to-basket">
+      <section class="add-to-basket__container">
+          <h4 class="add-to-basket__title">Добавить в&nbsp;корзину</h4>
+          <form class="add-to-basket__form" action="index.html" method="post">
+            <fieldset class="add-to-basket__fieldset">
+              <legend class="add-to-basket__legend">Выберите размер:</legend>
+              <div class="add-to-basket__input-container">
+                <input class="add-to-basket__radio" type="radio" name="size" value="S" id="size-s">
+                <label class="add-to-basket__label" for="size-s">S</label>
+                <input class="add-to-basket__radio" type="radio" name="size" value="M" id="size-m">
+                <label class="add-to-basket__label" for="size-m">M</label>
+                <input class="add-to-basket__radio" type="radio" name="size" value="L" id="size-l">
+                <label class="add-to-basket__label" for="size-l">L</label>
+              </div>
+            </fieldset>
+            <input class="btn btn--green add-to-basket__btn" type="submit" name="add-to-basket" value="Добавить">
+          </form>
+      </section>
+      <div class="add-to-basket__overlay">
+      </div>
+    </div>
+    <script src="./js/catalog.js" charset="utf-8"></script>
     <script src="./js/mobile-menu.js" charset="utf-8"></script>
   </body>
 </html>
